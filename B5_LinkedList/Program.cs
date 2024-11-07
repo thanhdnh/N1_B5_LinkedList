@@ -29,6 +29,14 @@ public class LinkedList{
         Node current = FindPrevNode(removedelement);
         current.link = current.link.link;
     }
+    public void Swap(object nodeA, object nodeB){
+        object prevA = FindPrevNode(nodeA).element;
+        object prevB = FindPrevNode(nodeB).element;
+        Remove(nodeA);
+        Remove(nodeB);
+        Insert(nodeB, prevA);
+        Insert(nodeA, prevB);
+    }
 }
 public class Program
 {

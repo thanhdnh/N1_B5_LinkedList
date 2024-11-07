@@ -32,10 +32,10 @@ public class LinkedList{
     public void Swap(object nodeA, object nodeB){
         object prevA = FindPrevNode(nodeA).element;
         object prevB = FindPrevNode(nodeB).element;
-        Remove(nodeA);
         Remove(nodeB);
-        Insert(nodeB, prevA);
         Insert(nodeA, prevB);
+        Remove(nodeA);
+        Insert(nodeB, prevA);
     }
 }
 public class Program
@@ -47,7 +47,11 @@ public class Program
         linkedlist.Insert("milk", "bread");
         linkedlist.Insert("bacon", "milk");
         ;
-        linkedlist.Remove("milk");
+        //linkedlist.Remove("milk");
+        ;
+        linkedlist.Insert("egg", "bacon");
+        linkedlist.Insert("cheese", "egg");
+        linkedlist.Swap("milk", "egg");
         ;
     }
 }

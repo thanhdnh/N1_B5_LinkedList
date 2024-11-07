@@ -16,6 +16,7 @@ public class LinkedList
             current = current.link;
         return current;
     }
+    //Tương đường AddAfter
     public void Insert(object newelement, object afterelement)
     {
         Node newnode = new Node(newelement);
@@ -45,7 +46,16 @@ public class LinkedList
         Insert(nodeB, prevA);
     }
     public void Sort(){
-        
+
+    }
+    public void InsertBefore(object newnode, object beforenode){
+
+    }
+    public void InsertFirst(object newnode){
+
+    }
+    public void InsertLast(object newnode){
+
     }
 }
 public class Node2
@@ -82,6 +92,7 @@ public class DoubleLinkedList{
             current = current.flink;
         return current;
     }
+    //Tương đương AddAfter
     public void Insert(object newelement, object afterelement)
     {
         Node2 current = Find(afterelement);
@@ -112,6 +123,15 @@ public class DoubleLinkedList{
     }
     public void Sort(){
 
+    }
+    public void InsertBefore(object newnode, object beforenode){
+
+    }
+    public void InsertFirst(object newnode){
+
+    }
+    public void InsertLast(object newnode){
+        
     }
 }
 

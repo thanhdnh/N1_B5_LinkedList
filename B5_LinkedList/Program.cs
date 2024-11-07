@@ -44,6 +44,9 @@ public class LinkedList
         Remove(nodeA);
         Insert(nodeB, prevA);
     }
+    public void Sort(){
+        
+    }
 }
 public class Node2
 {
@@ -106,6 +109,9 @@ public class DoubleLinkedList{
         Insert(nodeA, prevB);
         Remove(nodeA);
         Insert(nodeB, prevA);
+    }
+    public void Sort(){
+
     }
 }
 
